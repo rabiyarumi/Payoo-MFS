@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo MFS</title>
-    <!-- tailwind & daisy ui setup -->
+    <!-- tailwind & daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,7 +13,7 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-3">
+              <div class="artboard artboard-demo phone-2">
 
                 <!-- login section -->
                 <div class="hero bg-base-200 min-h-screen">
@@ -25,19 +25,19 @@
                             <label class="label">
                               <span class="label-text">Mobile Number</span>
                             </label>
-                            <input type="text" placeholder="Enter your number" class="input input-bordered" required />
+                            <input id="mobail-number" type="text" placeholder="Enter your number" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">4 Digit Pin</span>
                             </label>
-                            <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                            <input id="pin-number" type="password" autocomplete="off" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
                             <label class="label">
                               <a href="#" class="label-text-alt link link-hover">Forgot Pin?</a>
                             </label>
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Login</button>
+                            <button id="login-btn" class="btn btn-primary">Login</button>
                           </div>
                         </form>
                       </div>
@@ -47,6 +47,6 @@
             </div>
           </div>
     </main>
-    
+    <script src="./js/login.js"></script>
 </body>
 </html> 
